@@ -22,7 +22,7 @@ The tests use fakes for all hardware, so they run on any machine.
 On the Raspberry Pi:
 
 ```bash
-pip install "rpi-cable-control[pi] @ git+https://github.com/mahmoudtabikh/Automated-Control-with-Rasbpian"
+pip install "rpi-cable-control[pi] @ git+https://github.com/mahmoudtabikh/Automated-Control-with-Raspbian"
 ```
 
 The `pi` extra installs `RPi.GPIO`. Leave it out on other machines.
@@ -31,8 +31,8 @@ The `pi` extra installs `RPi.GPIO`. Leave it out on other machines.
 For development:
 
 ```bash
-git clone https://github.com/mahmoudtabikh/Automated-Control-with-Rasbpian
-cd Automated-Control-with-Rasbpian
+git clone https://github.com/mahmoudtabikh/Automated-Control-with-Raspbian
+cd Automated-Control-with-Raspbian
 pip install -e ".[dev]"
 ```
 
