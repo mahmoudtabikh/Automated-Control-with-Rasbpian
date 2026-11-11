@@ -133,9 +133,7 @@ def switch_time(sleep: float, cables: Sequence[Cable], testing_time: float) -> N
     logger.debug("fixed-time switching finished")
 
 
-def switch_random(
-    cables: Sequence[Cable], max_limit: int, testing_time: float
-) -> None:
+def switch_random(cables: Sequence[Cable], max_limit: int, testing_time: float) -> None:
     """Cycle through cables with a random hold time.
 
     One hold time between 1 and max_limit seconds is drawn for each pass

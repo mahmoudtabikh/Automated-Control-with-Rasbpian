@@ -33,3 +33,17 @@ addopts = "--cov=cable_control --cov=cableControl --cov=checkInterfaces --cov-re
 
 [tool.coverage.run]
 branch = true
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "N", "B", "UP", "SIM"]
+
+[tool.ruff.lint.per-file-ignores]
+# Legacy modules keep their original class and method names.
+"src/cableControl.py" = ["N801", "N802", "N999"]
+"src/checkInterfaces.py" = ["N801", "N802", "N999"]
+"src/cable_control/__init__.py" = ["N814", "N817"]
